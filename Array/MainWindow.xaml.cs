@@ -27,11 +27,11 @@ namespace Array
         {
             int valore = int.Parse(txtValore.Text);
             int[] array = new int[valore];
-            array = GestioneArray.RiempiArray(array);
+            GestioneArray.RiempiArray(array);
             string risposta = "";
             for (int i = 0; i < array.Length; i++)
             {
-                risposta = array[i].ToString() + " ";
+                risposta = risposta+ " " + array[i].ToString();
             }
             lblResult.Content = risposta;
         }

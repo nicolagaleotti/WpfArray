@@ -9,6 +9,11 @@
     <Grid Background="#FFFFFF74">
         <TextBox Name="txtValore" HorizontalAlignment="Left" Height="45" Margin="80,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="20" Background="#FFFFF9C2"/>
         <Button Name="btnStampa" Content="Crea e Stampa" HorizontalAlignment="Left" Margin="255,110,0,0" VerticalAlignment="Top" Width="230" Height="45" Background="#FFFFE800" FontSize="20" FontWeight="Bold" FontFamily="Showcard Gothic" Click="btnStampa_Click"/>
-        <Label Name="lblResult" Content="" HorizontalAlignment="Left" Margin="80,225,0,0" VerticalAlignment="Top" Height="45" Width="405" Background="#FFFFF9C2"/>
+        <Label Name="lblResult1" Content="" HorizontalAlignment="Left" Margin="200,185,0,0" VerticalAlignment="Top" Height="45" Width="285" Background="#FFFFF9C2" FontSize="14"/>
+        <Label Content="I array" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="75,185,0,0" VerticalAlignment="Top" Width="125" Height="45" FontSize="20" FontWeight="Bold"/>
+        <Label Content="II array" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="75,248,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="20" FontWeight="Bold"/>
+        <Label Name="lblResult2" Content="" HorizontalAlignment="Left" Margin="200,248,0,0" VerticalAlignment="Top" Height="45" Width="285" Background="#FFFFF9C2" FontSize="14"/>
+        <Label Name="lblUnione" Content="" HorizontalAlignment="Left" Margin="195,320,0,0" VerticalAlignment="Top" Height="45" Width="290" Background="#FFFFF9C2" FontSize="14"/>
+        <Label Content="Unione" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,320,0,0" VerticalAlignment="Top" Height="45" Width="115" FontSize="20" FontWeight="Bold" FontFamily="Showcard Gothic"/>
     </Grid>
 </Window>

@@ -5,6 +5,7 @@ namespace LibreriaArray
     public class GestioneArray
     {
         // Tipi int
+        static Random random = new Random();
 
         public static void LeggiArrayInt(int[] array)
         {
@@ -54,12 +55,20 @@ namespace LibreriaArray
         }
         public static void RiempiArray(int[] array)
         {
-            var random = new Random();
             for (int i = 0; i < array.Length; i++)
             {
                 int randomnumber = random.Next();
                 array[i] = randomnumber;
             }
+        }
+        public static long [] UnisciArray(int[] array1, int[] array2)
+        {
+            long[] array = new long[array1.Length];
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = array1[i] + array2[i];
+            }
+            return array;
         }
 
         // Tipi double

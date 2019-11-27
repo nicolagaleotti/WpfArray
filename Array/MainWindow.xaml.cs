@@ -26,14 +26,32 @@ namespace Array
         private void btnStampa_Click(object sender, RoutedEventArgs e)
         {
             int valore = int.Parse(txtValore.Text);
-            int[] array = new int[valore];
-            GestioneArray.RiempiArray(array);
+            int[] array1 = new int[valore];
+            GestioneArray.RiempiArray(array1);
             string risposta = "";
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < array1.Length; i++)
             {
-                risposta = risposta+ " " + array[i].ToString();
+                risposta = risposta+ " " + array1[i].ToString();
             }
-            lblResult.Content = risposta;
+            lblResult1.Content = risposta;
+            int[] array2 = new int[valore];
+            GestioneArray.RiempiArray(array2);
+            risposta = "";
+            for (int i = 0; i < array2.Length; i++)
+            {
+                risposta = risposta + " " + array2[i].ToString();
+            }
+            lblResult2.Content = risposta;
+            long[] array = new long[array1.Length];
+            array = GestioneArray.UnisciArray(array1, array2);
+            risposta = "";
+            for (int i = 0; i < array2.Length; i++)
+            {
+                risposta = risposta + " " + array[i].ToString();
+            }
+            lblUnione.Content = risposta;
         }
+
+        
     }
 }

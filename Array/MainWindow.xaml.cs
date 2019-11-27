@@ -42,10 +42,10 @@ namespace Array
                 risposta = risposta + " " + array2[i].ToString();
             }
             lblResult2.Content = risposta;
-            long[] array = new long[array1.Length];
+            int[] array = new int[array1.Length + array2.Length];
             array = GestioneArray.UnisciArray(array1, array2);
             risposta = "";
-            for (int i = 0; i < array2.Length; i++)
+            for (int i = 0; i < array.Length; i++)
             {
                 risposta = risposta + " " + array[i].ToString();
             }

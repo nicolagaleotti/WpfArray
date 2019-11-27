@@ -61,12 +61,18 @@ namespace LibreriaArray
                 array[i] = randomnumber;
             }
         }
-        public static long [] UnisciArray(int[] array1, int[] array2)
+        public static int [] UnisciArray(int[] array1, int[] array2)
         {
-            long[] array = new long[array1.Length];
-            for (int i = 0; i < array.Length; i++)
+            int[] array = new int[array1.Length + array2.Length];
+            for (int i = 0; i < array1.Length; i++)
             {
-                array[i] = array1[i] + array2[i];
+                array[i] = array1[i];
+            }
+            int c = 0;
+            for (int i = array1.Length; i<array.Length; i++)
+            {
+                array[i] = array2[c];
+                c++;
             }
             return array;
         }

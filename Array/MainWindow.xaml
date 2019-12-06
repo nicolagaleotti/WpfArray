@@ -5,15 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Array"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="574">
-    <Grid Background="#FFFFFF74">
-        <TextBox Name="txtValore" HorizontalAlignment="Left" Height="45" Margin="80,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="20" Background="#FFFFF9C2"/>
-        <Button Name="btnStampa" Content="Crea e Stampa" HorizontalAlignment="Left" Margin="255,110,0,0" VerticalAlignment="Top" Width="230" Height="45" Background="#FFFFE800" FontSize="20" FontWeight="Bold" FontFamily="Showcard Gothic" Click="btnStampa_Click"/>
-        <Label Name="lblResult1" Content="" HorizontalAlignment="Left" Margin="200,185,0,0" VerticalAlignment="Top" Height="45" Width="285" Background="#FFFFF9C2" FontSize="14"/>
-        <Label Content="I array" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="75,185,0,0" VerticalAlignment="Top" Width="125" Height="45" FontSize="20" FontWeight="Bold"/>
-        <Label Content="II array" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="75,248,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="20" FontWeight="Bold"/>
-        <Label Name="lblResult2" Content="" HorizontalAlignment="Left" Margin="200,248,0,0" VerticalAlignment="Top" Height="45" Width="285" Background="#FFFFF9C2" FontSize="14"/>
-        <Label Name="lblUnione" Content="" HorizontalAlignment="Left" Margin="195,320,0,0" VerticalAlignment="Top" Height="45" Width="290" Background="#FFFFF9C2" FontSize="14"/>
-        <Label Content="Unione" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,320,0,0" VerticalAlignment="Top" Height="45" Width="115" FontSize="20" FontWeight="Bold" FontFamily="Showcard Gothic"/>
+        Title="MainWindow" Height="450" Width="814">
+    <Grid Background="#FF84FFF4">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox Name="txtValore" HorizontalAlignment="Left" Height="50" Margin="255,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" FontSize="20" Background="#FF5FC5FF"/>
+        <Button Name="btnStampa" Content="Crea e Stampa" HorizontalAlignment="Left" Margin="460,49,0,0" VerticalAlignment="Top" Width="310" Height="75" Background="#FF00D1FF" FontSize="20" FontWeight="Bold" FontFamily="Showcard Gothic" Click="btnStampa_Click"/>
+        <Label Name="lblResult1" Content="" HorizontalAlignment="Left" Margin="410,174,0,0" VerticalAlignment="Top" Height="45" Width="360" Background="#FF5FC5FF" FontSize="14"/>
+        <Label Content="I array" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="270,174,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="20" FontWeight="Bold"/>
+        <Label Content="II array" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="270,250,0,0" VerticalAlignment="Top" Width="120" Height="45" FontSize="20" FontWeight="Bold"/>
+        <Label Name="lblResult2" Content="" HorizontalAlignment="Left" Margin="410,250,0,0" VerticalAlignment="Top" Height="45" Width="360" Background="#FF5FC5FF" FontSize="14"/>
+        <Label Name="lblUnione" Content="" HorizontalAlignment="Left" Margin="55,350,0,0" VerticalAlignment="Top" Height="45" Width="470" Background="#FF5FC5FF" FontSize="14"/>
+        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Quanti numeri?" HorizontalAlignment="Left" Margin="255,44,0,0" VerticalAlignment="Top" Width="165" Height="51" FontSize="18" FontWeight="Bold" FontFamily="Verdana"/>
+        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Unione" HorizontalAlignment="Left" Margin="185,306,0,0" VerticalAlignment="Top" Width="205" FontSize="22" FontWeight="Bold"/>
+        <Image Margin="-150,30,371,100" Source="array.png" Stretch="Fill"/>
+        <Image Margin="490,300,-37,-6" Source="logo_hp_12215.png" Stretch="Fill"/>
     </Grid>
 </Window>
